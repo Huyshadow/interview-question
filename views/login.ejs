@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="/css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <img src="/assets/image/simpleAi.jpeg" alt="Nike Logo" width="80" style="margin-bottom: 20px;">
+          <h1>Welcome to Simple AI</h1>
+          <p>Please don't hestitate to call me if you need help</p>
+          <div class="phone">+84 854 001 109</div>
+          <div class="social">
+            <a href="#">📘</a>
+            <a href="#">🐦</a>
+            <a href="#">🔗</a>
+          </div>
+        </div>
+        <div class="right">
+          <h2>Login</h2>
+          <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" autocomplete="off" required>
+            <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+            <button type="submit">Login</button>
+            <p class="error-message"><%= message ? message : '' %></p>
+          </form>
+        </div>
+      
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link href="/css/home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h1><span>Welcome! Your name is:</span> <span> <%= user ? user.username : 'Guest' %> </span></h1>
+    <% if (!user) { %>
+      <h2>Please login to see your name.</h2>  <!-- Display user's name if logged in -->
+    <% } %>
+    <h2><%= numberUser < 2 ? "There is " + numberUser + " people has signed up" : "There are " + numberUser + " people have signed up" %>  </h2>
+  </div>
+</body>
+</html>
