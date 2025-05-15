@@ -1,4 +1,11 @@
+# macOS system file
 .DS_Store
+
+# Environment variables file
 .env
-.idea/
-.node_modules
+
+# IDE folder
+idea/
+
+# Node modules folder
+node_modules/
